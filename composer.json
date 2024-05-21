@@ -1,0 +1,27 @@
+{
+  "name": "furqansiddiqui/charcoal-mailgun-adapter",
+  "description": "MailGun adapter for Charcoal Mailer PHP",
+  "type": "library",
+  "homepage": "https://github.com/furqansiddiqui/charcoal-mailgun-adapter",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Furqan A. Siddiqui",
+      "email": "hello@furqansiddiqui.com",
+      "homepage": "https://www.furqansiddiqui.com",
+      "role": "Author"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "charcoal-dev/mailer": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Charcoal\\Mailer\\Agents\\MailGun\\": [
+        "src"
+      ]
+    }
+  },
+  "minimum-stability": "dev"
+}
