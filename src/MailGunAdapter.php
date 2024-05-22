@@ -217,7 +217,7 @@ class MailGunAdapter implements MailerAgentInterface
         $responseType = curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
         curl_close($ch);
 
-        if (explode(";", $responseType ?? "")[0] === "application/json") {
+        if (explode(";", strval($responseType))[0] === "application/json") {
             $response = json_decode($response, true);
         }
 
